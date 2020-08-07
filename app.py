@@ -13,6 +13,8 @@ import base64
 from io import BytesIO
 from xgboost import XGBRegressor
 from PIL import Image
+import xlsxwriter
+
 
 ## Chargement du modèle (joblib)
 model = joblib.load('immo_model.pkl')
