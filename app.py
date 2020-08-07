@@ -30,7 +30,7 @@ def app():
     ## En-tête
     html_template = """
     <div style = "background-color : #6495ED ; padding:15px">
-    <h2 style="color : white; text-align : center; ">Estimateur de biens foncier (immobilier)</h2>
+    <h2 style="color : white; text-align : center; ">Estimateur du prix de l'immobilier)</h2>
     
     """
     st.markdown(html_template, unsafe_allow_html=True)
@@ -38,7 +38,7 @@ def app():
     st.write("")
     
     #st.header("Estimateur de prix de bien foncier pour le compte d'agence immobilière") 
-    st.write(" Cet outil de démonstration se base sur un jeu de donnée réel ayant permis la création d'une interface de calcul en temsp réel visant, à estimer les prix de biens immobiliers afin de les acquérir ou les vendre au juste prix et d'anticiper leurs valorisations sur le marché.")
+    st.write(" Cet outil de démonstration se base sur un jeu de donnée ayant permis la création d'une interface de calcul en temps réel visant à estimer les prix de biens immobiliers afin de les acquérir ou les vendre au juste prix, et anticiper leur valorisation sur le marché.")
              
     ## Création la sidebar
     sidebar_selection = st.sidebar.selectbox("Type de prédiction", ("Prédiction en temps réel", "Prédiction par lot (batch)"))
@@ -63,7 +63,7 @@ def app():
         nombre_pieces	= st.number_input("Nombre de pièces", min_value=1, max_value=15, value=2)
         nombre_chambres = st.number_input("Nombre de chambres ", min_value=1, max_value=15, value=3)
         population_en_millier = st.text_input("Nombre d'habitants de la localité où est implanté le bien foncier", "20000")
-        nombre_foyer = st.text_input("Nombre de foyer résidant dans la localité où est vendu le bien foncier ", "4000")
+        nombre_foyer = st.text_input("Nombre de foyers résidant dans la localité où est vendu le bien foncier ", "4000")
         revenue_moyen_habitants = st.text_input(" Revenu moyen des résidents de la localité ", "25000")
         proximite_mer = st.selectbox("Le bien immobilier se situe : ",["Non loin des côtes", "A l'interieur des terres", "En bord de mer", "Dans une marina"])
        
@@ -95,9 +95,9 @@ def app():
     
     if sidebar_selection == "Prédiction par lot (batch)":
         
-        st.write("""Pour servir de démonstration, veuillez téléchargez puis charger le fichier ci-dessous, afin d'obtenir une estimation par lot de l'intelligence artificielle pour le prix du bien que vous souhaitez estimer 🏠.""")
+        st.write("""Pour servir de démonstration, veuillez télécharger puis charger le fichier ci-dessous, afin d'obtenir une estimation par lot de l'intelligence artificielle pour le prix du bien que vous souhaitez estimer 🏠.""")
         
-        demo = st.markdown("""[1️ - Telecharger le fichier de démonstration](https://drive.google.com/uc?export=download&id=1C0x6Gb9ieIsVArz29ci5dW8ekOuz7_02) ✅""")
+        demo = st.markdown("""[1️ - Télécharger le fichier de démonstration](https://drive.google.com/uc?export=download&id=1C0x6Gb9ieIsVArz29ci5dW8ekOuz7_02) ✅""")
         batch = st.file_uploader("Insérez le fichier de démonstration en cliquant sur ''browse files''", type="csv")
         
         ## génération de la prédiction
