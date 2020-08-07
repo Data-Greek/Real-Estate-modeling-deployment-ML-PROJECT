@@ -1,4 +1,4 @@
-************************Agence Marketic**********************************
+**Agence Marketic**
 
 This is a estimator app about assessing real estate median price.
 
