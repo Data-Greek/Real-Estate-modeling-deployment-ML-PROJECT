@@ -30,7 +30,7 @@ def app():
     ## En-tête
     html_template = """
     <div style = "background-color : #6495ED ; padding:15px">
-    <h2 style="color : white; text-align : center; ">Estimateur du prix de l'immobilier)</h2>
+    <h2 style="color : white; text-align : center; ">Estimateur du prix de l'immobilier</h2>
     
     """
     st.markdown(html_template, unsafe_allow_html=True)
