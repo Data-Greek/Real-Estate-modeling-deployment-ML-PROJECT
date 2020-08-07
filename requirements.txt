@@ -5,4 +5,3 @@ streamlit==0.62.1
 joblib==0.16.0
 xgboost==1.1.1
 xlsxwriter==1.2.9
-
